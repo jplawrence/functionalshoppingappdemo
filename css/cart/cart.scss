@@ -1,0 +1,82 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+nav {
+    height: 10vh;
+    margin-inline: 8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        font-weight: 700;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    .nav-links {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            margin: 0 3em;
+            font-size: 14px;
+            a {
+                text-decoration: none;
+                color: black;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 0;
+                    background: #A2D3C2;
+                    top: 20px;
+                    border-radius: 100vw;
+                    left: 0;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    .nav-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img {
+            width: 30px;
+            cursor: pointer;
+            position: relative;
+            &::before {
+                content: "0";
+                position: absolute;
+                background: #455D8D;
+                padding: 10px 12px;
+                border-radius: 100%;
+            }
+        }
+        span {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background: #455D8D;
+            color: #fff;
+            font-weight: 800;
+            font-size: 10px;
+            padding: 1px 6px;
+            border-radius: 100%;
+        }
+    }
+    .contact-cta {
+        margin-left: 30px;
+        padding: 0.6em 1.5em;
+        color: black;
+        background: #A2D3C2;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+    }
+}

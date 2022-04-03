@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main/index.css">
+    <title>Online Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo">logo</span>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">COUPONS</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="cart.html"><img src="images/bag-shopping-solid.svg" alt="shopping-cart-icon"></a>
+                <span id="cart-amount">0</span>
+            </div>
+            <a href="#" class="contact-cta">CONTACT</a>
+        </nav>
+        <section class="head-content">
+            <div class="images">
+                <img src="images/shoes-3.jpg" alt="pair of shoes" class="sneakers-3">
+            </div>
+            <div class="product-info">
+                <h1>Adidas Airforce 1's</h1>
+                <p>This pair of comfortable shoes comes along with a sleek design. Not only is this pair of sneakers on demand,
+                    but it also has comfortable sole pillows to keep your foot well rested. Affordable pricing found only here.
+                </p>
+                <ul class="sizes">
+                    <li id="large" class="large">L</li>
+                    <li id="med" class="med">M</li>
+                    <li id="small" class="small">S</li>
+                </ul>
+                <button id="purchase-btn" class="purchase-btn" onclick="addToCart()">ADD TO CART</button>
+                <button id="subtract-btn" class="subtract" onclick="subtract()">-</button>
+                <span id="count" class="count">0</span>
+                <button id="add-btn" class="add" onclick="add()">+</button>
+            </div>
+        </section>
+    </header>
+    <script src="index.js"></script>
+</body>
+</html>
